@@ -29,8 +29,7 @@ export const Panel = styled.div`
 export const InputContainer = styled.label`
   position: relative;
   width: 100%;
-  height: 100px;
-  margin-bottom: 20px;
+  flex: 1;
   padding: 5px;
   display: flex;  
   align-items: center;
@@ -59,6 +58,7 @@ export const CsvInput = styled.input`
 
 export const FieldContainer = styled.div`
   margin-top: 10px;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -79,6 +79,17 @@ export const FieldsHeader = styled.div`
   gap: 20px;
 
   & > span {
+    font-weight: 600;
+    color: #fff;
+    font-size: 18px;
+  }
+`
+
+export const FormHeader = styled.div`
+  display: flex;
+  justify-content: space-between;
+
+  span {
     font-weight: 600;
     flex: 1;
     color: #fff;
@@ -107,4 +118,29 @@ export const Tag = styled.span`
   border-radius: 5px;
   background-color: #fff;
   color: #000;
+`
+
+export const Csv = styled.div`
+  width: 200px;
+  height: 100px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  margin-bottom: 20px;
+
+  border-radius: 6px;
+  background: #fff;
+`
+
+export const CsvName = styled.span`
+  color: #03454f;
+  text-align: center;
+`
+
+export const RemoveCsvContainer = styled.div`
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
 `
