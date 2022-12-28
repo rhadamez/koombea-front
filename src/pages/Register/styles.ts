@@ -32,7 +32,3 @@ export const OrLabel = styled.span`
   align-self: center;
   color: #fff;
 `
-
-export const ErrorMessage = styled.span`
-  color: red;
-`

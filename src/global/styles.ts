@@ -11,6 +11,20 @@ const GlobalStyle = createGlobalStyle`
   input, button {
     outline: none;
   }
+
+  a {
+    min-width: max-content;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid #fff;
+
+    &:hover {
+      background-color: #fff;
+
+      color: #048c66;
+    }
+  }
 `
 
 export { GlobalStyle }

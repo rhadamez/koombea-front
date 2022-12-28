@@ -23,6 +23,8 @@ export const Content = styled.div`
 export const Menu = styled.div`
   display: flex;
   gap: 10px;
+  justify-content: center;
+  align-items: center;
 `
 
 export const UserName = styled.span`
