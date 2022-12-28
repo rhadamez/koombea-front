@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { Button } from '../../components/Button'
 import { Input } from '../../components/Input'
 import { useAuth } from '../../store/AuthContext'
@@ -6,6 +7,7 @@ import * as S from './styles'
 
 export function SignIn() {
   const { signIn } = useAuth()
+  const navigate = useNavigate()
   const [form, setForm] = useState({
     username: '',
     password: ''
@@ -18,7 +20,11 @@ export function SignIn() {
   }
 
   async function handleLogin() {
-    await signIn({ username: form.username, password: form.password})
+    try {
+      await signIn({ username: form.username, password: form.password})
+      navigate('/')
+    } catch(err) {
+    }
   }
 
   return (

@@ -3,6 +3,12 @@ import { darken } from 'polished'
 
 export const Container = styled.button`
   height: 35px;
+  width: 100%;
+  min-width: max-content;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   border: none;
   background-color: #fff;
