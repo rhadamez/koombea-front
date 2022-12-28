@@ -2,7 +2,6 @@ import { Routes, Route } from 'react-router-dom'
 import { Contacts } from './pages/Contacts'
 import { DefaultLayout } from './pages/DefaultLayout'
 import { Files } from './pages/Files'
-import { Home } from './pages/Home'
 import { NotFound } from './pages/NotFound'
 import { Register } from './pages/Register'
 import { SignIn } from './pages/SignIn'
@@ -16,7 +15,6 @@ export function Router() {
 		<Routes>
 			{user ? (
 				<Route path='/' element={<DefaultLayout />}>
-					<Route path='/' element={<Home />} />
 					<Route path='/contacts' element={<Contacts />} />
 					<Route path='/upload-contacts' element={<UploadContacts />} />
 					<Route path='/files' element={<Files />} />

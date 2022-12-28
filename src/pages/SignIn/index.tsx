@@ -24,7 +24,7 @@ export function SignIn() {
     e.preventDefault()
     try {
       await signIn({ username: form.username, password: form.password})
-      navigate('/')
+      navigate('/upload-contacts')
     } catch(err: any) {
       const { message } = err.response.data
       if(message) {
