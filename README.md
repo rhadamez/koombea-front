@@ -13,4 +13,7 @@
 ```
 "yarn dev" and the server will be running.
 ```
+
+Now you can navigate to "localhost:3000/login".
+
 Next step is to create first user and signin.
