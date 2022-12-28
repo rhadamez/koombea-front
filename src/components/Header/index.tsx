@@ -16,9 +16,9 @@ export function Header() {
     <S.Container>
       <S.Content>
         <S.Menu>
-          <Link to={user.id}>Upload Contacts</Link>
-          <Link to={user.id}>Contact List</Link>
-          <Link to={user.id}>Files</Link>
+          <Link to='/upload-contacts'>Upload Contacts</Link>
+          <Link to='/contacts'>Contact List</Link>
+          <Link to='/files'>Files</Link>
         </S.Menu>
         <S.UserInfo>
           <S.UserName>{user.username}</S.UserName>

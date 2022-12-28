@@ -6,7 +6,9 @@ export function DefaultLayout() {
   return (
     <S.Container>
       <Header />
-      <Outlet />
+      <S.Content>
+        <Outlet />
+      </S.Content>
     </S.Container>
   )
 }
