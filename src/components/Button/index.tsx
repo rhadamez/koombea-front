@@ -1,12 +1,13 @@
+import { ButtonHTMLAttributes } from 'react'
 import * as S from './styled'
 
-interface Props {
+interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
   text: string
 }
 
-export function Button({ text }: Props) {
+export function Button({ text, ...rest }: Props) {
   return (
-    <S.Container>
+    <S.Container {...rest}>
       <S.Text>{text}</S.Text>
     </S.Container>
   )

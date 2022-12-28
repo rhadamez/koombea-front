@@ -10,16 +10,17 @@ export const Container = styled.div`
 
 export const Title = styled.h1`
   color: #fff;
+  align-self: center;
 `
 
-export const Subtitle = styled.h1`
+export const Subtitle = styled.span`
   color: #fff;
 `
 
 export const Panel = styled.div`
   max-width: 350px;
   display: flex;
-  gap: 10px;
+  gap: 15px;
   flex-direction: column;
   padding: 20px;
 
